@@ -1,0 +1,39 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/idkYet.uss?fileID=7433441132597879392&amp;guid=5fae39b07ff7ce243bb8d8f0a9e06168&amp;type=3#idkYet" />
+    <ui:VisualElement name="ShipInfoContainer" style="height: 100px; width: 20%; align-items: center; background-color: rgba(40, 42, 54, 0.44); position: absolute; justify-content: center; left: 2%; bottom: auto; flex-direction: column; flex-grow: 1; right: auto; top: 14%; flex-wrap: nowrap;">
+        <ui:Label text="Ship Type:" display-tooltip-when-elided="true" name="ShipType" class="text info" />
+        <ui:Label text="Ship Health:" display-tooltip-when-elided="true" name="ShipHealth" class="text info" />
+    </ui:VisualElement>
+    <ui:VisualElement name="PlanetInfoContainer" style="height: 85%; width: 20%; align-items: center; background-color: rgba(40, 42, 54, 0.44); position: absolute; padding-left: 2%; padding-right: 2%; padding-top: 2%; padding-bottom: 2%; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; justify-content: center; left: auto; bottom: auto; flex-direction: column; flex-grow: 0; right: 2%; top: 14%;">
+        <ui:Button text="Quit" display-tooltip-when-elided="true" name="quit" class="button" />
+        <ui:Button text="Next Turn" display-tooltip-when-elided="true" name="nextTurn" class="button" />
+        <ui:DropdownField label="Select Ship" index="0" choices="explorer,flagship,miner" name="selectShip" focusable="true" usage-hints="None" class="button" style="flex-direction: column; align-items: center; justify-content: flex-start; flex-wrap: nowrap; flex-grow: 0.25; -unity-text-align: upper-center; white-space: normal;" />
+        <ui:Button text="Gen Ship" display-tooltip-when-elided="true" name="genShip" class="button" style="align-items: stretch;" />
+        <ui:Button text="Move To" display-tooltip-when-elided="true" name="moveTo" class="button" />
+        <ui:Button text="Manual" display-tooltip-when-elided="true" name="manual" class="button" />
+        <ui:Button text="Extract Resource" display-tooltip-when-elided="true" name="extractResource" class="button" style="border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;" />
+        <ui:Button text="Extract All" display-tooltip-when-elided="true" name="extractAll" class="button" />
+        <ui:Button text="Establish Control" display-tooltip-when-elided="true" name="establishControl" class="button" />
+        <ui:Button text="Next Ship" display-tooltip-when-elided="true" name="nextShip" class="button" style="-unity-text-align: lower-center;" />
+        <ui:Button text="Fire" display-tooltip-when-elided="true" name="fire" class="button" style="-unity-text-align: middle-center;" />
+        <ui:Label text="Planet:" display-tooltip-when-elided="true" name="Planet" class="text info" />
+        <ui:Label text="Planet Type: " display-tooltip-when-elided="true" name="PlanetType" class="text info" />
+        <ui:Label text="Resouce: " display-tooltip-when-elided="true" name="Resource" class="text info" />
+    </ui:VisualElement>
+    <ui:VisualElement name="TopBarContainer" style="background-color: rgb(40, 42, 54); height: 10%; justify-content: center; align-items: center; bottom: auto; flex-grow: initial; width: 96%; -unity-text-align: upper-center; flex-direction: row; margin-right: 0; padding-right: 0; padding-left: 0; padding-top: 0; padding-bottom: 0; color: rgb(255, 255, 255); border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; left: 2%; position: absolute; top: 2%;">
+        <ui:Label text="SPACE GAME" display-tooltip-when-elided="true" name="Title" binding-path=".text" style="align-items: center; justify-content: center; left: auto; -unity-text-align: upper-center; white-space: nowrap; right: auto; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; flex-grow: 1; font-size: 20%; color: rgb(255, 85, 85); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(217, 42, 42); border-right-color: rgb(217, 42, 42); border-top-color: rgb(217, 42, 42); border-bottom-color: rgb(217, 42, 42); padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; width: auto; -unity-font: url(&apos;project://database/Assets/Fonts/coolvetica%20rg.otf?fileID=12800000&amp;guid=5023889a79cdf4512ba38cbc187253d6&amp;type=3#coolvetica rg&apos;); -unity-font-style: bold;" />
+        <ui:VisualElement name="info" class="topSubSection" style="padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; justify-content: space-between; align-items: stretch; flex-direction: row; right: 8%;">
+            <ui:Label text="Turn:" display-tooltip-when-elided="true" name="turn" class="greentext" style="right: 0;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Resources" class="topSubSection" style="flex-direction: row; flex-grow: 1; justify-content: center; width: 280px; right: 5%;">
+            <ui:Label text="Ore: 0" display-tooltip-when-elided="true" name="OreStat" class="greentext" />
+            <ui:Label text="Fuel: 0" display-tooltip-when-elided="true" name="FuelStat" class="greentext" />
+            <ui:Label text="Uranium: 0" display-tooltip-when-elided="true" name="UraniumStat" class="greentext" />
+            <ui:Label text="Ship Limit: 0" display-tooltip-when-elided="true" name="ShipLimitStat" class="greentext" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="SaveContainer" style="height: 42px; width: 159px; align-items: center; background-color: rgba(40, 42, 54, 0.44); position: absolute; justify-content: center; left: 21px; bottom: auto; flex-direction: column; flex-grow: 1; right: auto; top: 199px; flex-wrap: nowrap;">
+        <ui:Button text="Save" display-tooltip-when-elided="true" name="Save" class="button" />
+    </ui:VisualElement>
+</ui:UXML>
+ 

@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8abb0a1a6b382f94f9167cad2b1bd1ec, type: 3}
+  m_Name: VenusShape
+  m_EditorClassIdentifier: 
+  planetRadius: 0.2
+  noiseLayers:
+  - enabled: 0
+    useFirstLayerAsMask: 1
+    noiseSettings:
+      filterType: 1
+      simpleNoiseSettings:
+        strength: 1
+        numLayers: 1
+        baseRoughness: 1
+        roughness: 2
+        persistence: 0.5
+        center: {x: 0, y: 0, z: 0}
+        minValue: 0
+      rigidNoiseSettings:
+        strength: 0.49
+        numLayers: 3
+        baseRoughness: 7.4
+        roughness: 9.13
+        persistence: 1.57
+        center: {x: 0, y: 0, z: 0}
+        minValue: 1.25
+        weightMultiplayer: 0.98
+  - enabled: 1
+    useFirstLayerAsMask: 0
+    noiseSettings:
+      filterType: 0
+      simpleNoiseSettings:
+        strength: 0.11
+        numLayers: 5
+        baseRoughness: 0.44
+        roughness: 3.31
+        persistence: 0.5
+        center: {x: 0, y: 0, z: 0}
+        minValue: 0.78
+      rigidNoiseSettings:
+        strength: 1
+        numLayers: 1
+        baseRoughness: 1
+        roughness: 2
+        persistence: 0.5
+        center: {x: 0, y: 0, z: 0}
+        minValue: 0
+        weightMultiplayer: 0.8
+  planetType: 2

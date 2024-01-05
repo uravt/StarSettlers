@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 90a644744c173fe41958220e39b05d85
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - mainCamera: {instanceID: 0}
+  - tilemap: {instanceID: 0}
+  - planetTypeText: {instanceID: 0}
+  - nameText: {instanceID: 0}
+  - resourceText: {instanceID: 0}
+  - whoseTurnText: {instanceID: 0}
+  - produceText: {instanceID: 0}
+  - fuelText: {instanceID: 0}
+  - oreText: {instanceID: 0}
+  - uraniumText: {instanceID: 0}
+  - phaseText: {instanceID: 0}
+  - clickedTile: {instanceID: 0}
+  - teamTilemap: {instanceID: 0}
+  - spaceship: {fileID: 919132149155446097, guid: 05b77ffe0a3b34c4b9f5a08df54a6eef, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
