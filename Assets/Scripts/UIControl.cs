@@ -180,7 +180,7 @@ public class UIControl : MonoBehaviour
         Renderer shipRenderer = ship.GetComponent<Renderer>();
         Color originalColor = shipRenderer.material.color;
         float highlightTime = 5f;
-        float smoothness = 0.01f;
+        float smoothness = 0.1f;
         float count = smoothness;
         while (count < highlightTime)
         {
@@ -189,7 +189,7 @@ public class UIControl : MonoBehaviour
                 shipRenderer.materials[i].color = Color.Lerp(Color.red, originalColor, count);
             }
             yield return new WaitForSeconds(smoothness);
-
+            count++;
         }
         for (int i = 0; i < materials.Length; i++)
         {
